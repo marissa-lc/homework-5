@@ -44,154 +44,140 @@
             <time-block>9:00am</time-block>
             </td>
             <td> 
-              <textarea></textarea>
+              <textarea id = Activity></textarea>
             </td>
             <td>
               <button type = "submit" class = "saveBtn">Save</button>
             </td>     
           </tr>
 
-<script>
-      var time = $(this).parent().attr("id");
-
-      localStorage.setItems(time, value);
-
-
-function hourUpdate() {
-  var currenthour = moment().hours();
-
-  console.log(currentHour);
-
-    $(".time-block").each(function() {
-      var blockHour = parseInt($(this).attr("id").split("-")[1]);
-    
-    if (blockHour < currentHour) {
-      $(this).addClass("past");
-    }
-    else if (blockHour === currentHour) {
-      $(this).removeClass("past");
-      $(this).addClass("present");
-    }
-    else {
-      $(this).removeClass("past");
-      $(this).removeClass("present");
-      $(this).addClass("future");
-    }
-  });
-}
-
-hourUpdate();
-
-    </script>
-
-
-<!---  
-      <table class="table">
-        <thead>
           <tr>
-            <th scope="col">Time</th>
-            <th scope="col">Activity</th>
-            <th scope="col">Save</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>9:00am</td>
-            <td> 
-              <textarea> 
-            </td>
-            <td>
-              <button = "submit">
-            </td>     
-          </tr>
-I can copy and paste this code seven more times but I feel like there is an easier way?
-          <tr>
-              <td>10:00am</td>
+              <td>
+              <time-block>10:00am</time-block>
+              </td>
               <td> 
-                <input type = "text"> 
+                <textarea></textarea>
               </td>
               <td>
-                <input type = "submit">
+                <button type = "submit" class = "saveBtn">Save</button>
               </td>     
             </tr>
 
             <tr>
-                <td>11:00am</td>
+                <td>
+                <time-block>11:00am</time-block>
+                </td>
                 <td> 
-                  <input type = "text"> 
+                  <textarea></textarea>
                 </td>
                 <td>
-                  <input type = "submit">
+                  <button type = "submit" class = "saveBtn">Save</button>
                 </td>     
               </tr>
 
               <tr>
-                  <td>12:00pm</td>
+                  <td>
+                  <time-block>12:00pm</time-block>
+                  </td>
                   <td> 
-                    <input type = "text"> 
+                    <textarea></textarea>
                   </td>
                   <td>
-                    <input type = "submit">
+                    <button type = "submit" class = "saveBtn">Save</button>
                   </td>     
                 </tr>
 
                 <tr>
-                    <td>1:00pm</td>
+                    <td>
+                    <time-block>1:00pm</time-block>
+                    </td>
                     <td> 
-                      <input type = "text"> 
+                      <textarea></textarea>
                     </td>
                     <td>
-                      <input type = "submit">
+                      <button type = "submit" class = "saveBtn">Save</button>
                     </td>     
                   </tr>
 
                   <tr>
-                      <td>2:00pm</td>
+                      <td>
+                      <time-block>2:00pm</time-block>
+                      </td>
                       <td> 
-                        <input type = "text"> 
+                        <textarea></textarea>
                       </td>
                       <td>
-                        <input type = "submit">
+                        <button type = "submit" class = "saveBtn">Save</button>
                       </td>     
                     </tr>
 
                     <tr>
-                        <td>3:00pm</td>
+                        <td>
+                        <time-block>3:00pm</time-block>
+                        </td>
                         <td> 
-                          <input type = "text"> 
+                          <textarea></textarea>
                         </td>
                         <td>
-                          <input type = "submit">
+                          <button type = "submit" class = "saveBtn">Save</button>
                         </td>     
                       </tr>
 
                       <tr>
-                          <td>4:00pm</td>
+                          <td>
+                          <time-block>4:00pm</time-block>
+                          </td>
                           <td> 
-                            <input type = "text"> 
+                            <textarea></textarea>
                           </td>
                           <td>
-                            <input type = "submit">
+                            <button type = "submit" class = "saveBtn">Save</button>
                           </td>     
                         </tr>
 
                         <tr>
-                            <td>5:00pm</td>
+                            <td>
+                            <time-block>5:00pm</time-block>
+                            </td>
                             <td> 
-                              <input type = "text"> 
+                              <textarea></textarea>
                             </td>
                             <td>
-                              <input type = "submit">
+                              <button type = "submit" class = "saveBtn">Save</button>
                             </td>     
                           </tr>
 
-        </tbody>
-      </table>
+
+<script>
 
 
+//function hourUpdate() {
+//  var currenthour = moment().hours();
 
+//  console.log(currentHour);
+
+//    $(".time-block").each(function() {
+//     var blockHour = parseInt($(this).attr("id").split("-")[1]);
+//    
+//    if (blockHour < currentHour) {
+//      $(this).addClass("past");
+//    }
+//    else if (blockHour === currentHour) {
+//      $(this).removeClass("past");
+//      $(this).addClass("present");
+//    }
+//    else {
+//      $(this).removeClass("past");
+//      $(this).removeClass("present");
+//      $(this).addClass("future");
+//    }
+//  });
+//}
+
+// hourUpdate();
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
--->    
